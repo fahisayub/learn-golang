@@ -35,10 +35,15 @@ func main() {
 	fmt.Println(c>=d||c<=d)
 	fmt.Println(a>b&&c>d)
 	fmt.Println(!(a<b))
-	sum:=0
-	for i:=0;i<10;i++{
-		sum+=i;
-	}
-	fmt.Println(sum)
-// in go there is no concept like 
+	var arr [5]int //defining array with fixed length
+	fmt.Println(arr)
+	arr[2]=10
+	fmt.Println(arr)
+	//to define array of unknown length(known as slice)
+	var uarr [] int
+	fmt.Println(uarr)
+	// more efficiently we can define array like
+	earr:=[5]int{1,2,3,4,5}
+	fmt.Println(earr)
+
 }
